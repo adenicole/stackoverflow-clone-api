@@ -39,7 +39,7 @@ Backend repo of the application stackoverflow-clone runing in a seperate contain
     ```
     _Note: Change the database name in `databaseConfig.sql` & `seed.sql` under `USE` command_
     
-5. Start the servers
+5. Write a CI/CD pipeline tart the servers
     ```
    for running both the servers simultaneously:
     
