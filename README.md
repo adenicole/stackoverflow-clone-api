@@ -10,9 +10,6 @@ __[Demo Video](https://www.youtube.com/watch?v=3jDIEf5vNp8)__
 
 Backend repo of the application stackoverflow-clone runing in a seperate container using a microservice architecture to be deployed on the same server as stackoverflow-client(front-end.
 
-__:new: New Update:__ _newly added features are mentioned in issue([#15](https://github.com/Mayank0255/Stack-Overflow-Clone/issues/15))_
-
-## My Tech Stack (MERN)
 
 #### Back-end
 * For handling server requests: `Node.js with Express.js Framework`
