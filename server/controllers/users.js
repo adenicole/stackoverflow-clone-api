@@ -38,7 +38,7 @@ const register = async (req, res) => {
   }
   try {
     // Register user in the database
-    await User.register(new User(req.body), (err, data) => {
+    User.register(new User(req.body), (err, data) => {
       if (err) {
         console.log(err);
         return res.status(err.code).json(err);

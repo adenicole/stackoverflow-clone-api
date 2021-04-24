@@ -2,12 +2,12 @@
 
 set -x
 
-RUNNING_API_CONTAINERS=$(sudo docker ps | grep stackoverflow-api | awk '{print $1}')
-ALL_API_CONTAINERS=$(sudo docker ps -a | grep stackoverflow-api | awk '{print $1}')
+RUNNING_API_CONTAINERS_ID=$(sudo docker ps | grep stackoverflow-api | awk '{print $1}')
+ALL_API_CONTAINERS_ID=$(sudo docker ps -a | grep stackoverflow-api | awk '{print $1}')
 
 # Stop and remove old containers
-sudo docker stop "${RUNNING_API_CONTAINERS}"
-sudo docker container rm "${ALL_API_CONTAINERS}"
+sudo docker stop "${RUNNING_API_CONTAINERS_ID}"
+sudo docker container rm "${ALL_API_CONTAINERS_ID}"
 
 # Build API app's image
 sudo docker build -t adenicole/stackoverflow-api .
